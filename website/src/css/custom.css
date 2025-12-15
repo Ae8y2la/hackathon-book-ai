@@ -1,0 +1,266 @@
+/**
+ * Custom CSS for Physical AI & Humanoid Robotics Educational Module
+ * Modern, clean, and responsive layout for learning content
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1a73e8; /* Google blue for a tech/robotics feel */
+  --ifm-color-primary-dark: #1865cc;
+  --ifm-color-primary-darker: #1658b9;
+  --ifm-color-primary-darkest: #124492;
+  --ifm-color-primary-light: #3b8cff;
+  --ifm-color-primary-lighter: #5a9fff;
+  --ifm-color-primary-lightest: #79b3ff;
+  --ifm-color-secondary: #f5f5f5; /* Light gray for backgrounds */
+  --ifm-color-content: #202124; /* Dark text for readability */
+  --ifm-color-content-secondary: #5f6368; /* Secondary text */
+  --ifm-navbar-background-color: #ffffff; /* White navbar */
+  --ifm-footer-background-color: #1a1a1a; /* Dark footer */
+  --ifm-card-background-color: #ffffff; /* Card background */
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(56, 58, 64, 0.2);
+  --ifm-card-border-radius: 12px;
+  --ifm-global-radius: 8px;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4285f4; /* Lighter blue for dark mode */
+  --ifm-color-primary-dark: #3367d6;
+  --ifm-color-primary-darker: #2a56b4;
+  --ifm-color-primary-darkest: #214491;
+  --ifm-color-primary-light: #5a99f7;
+  --ifm-color-primary-lighter: #73a9f9;
+  --ifm-color-primary-lightest: #8db9fb;
+  --ifm-color-secondary: #2d2d2d; /* Dark gray for backgrounds */
+  --ifm-color-content: #e8eaed; /* Light text for dark mode */
+  --ifm-color-content-secondary: #9aa0a6; /* Secondary text */
+  --ifm-navbar-background-color: #121212; /* Dark navbar */
+  --ifm-footer-background-color: #000000; /* Darker footer */
+  --ifm-card-background-color: #1e1e1e; /* Dark card background */
+  --docusaurus-highlighted-code-line-bg: rgba(56, 58, 64, 0.5);
+}
+
+/* Modern layout enhancements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+}
+
+/* Improved container spacing */
+.container {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* Modern card styling for content sections */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border: none;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Enhanced code block styling */
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module {
+  border-radius: var(--ifm-global-radius);
+  margin-bottom: 1.5rem;
+}
+
+/* Better heading styling */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-secondary);
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+}
+
+/* Improved list styling */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Better blockquote styling */
+blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background-color: var(--ifm-color-secondary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}
+
+/* Enhanced table styling */
+table {
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+}
+
+/* Custom styling for exercises and examples */
+.admonition {
+  border-radius: var(--ifm-global-radius);
+  margin: 1.5rem 0;
+}
+
+.admonition--note {
+  border-color: var(--ifm-color-primary);
+}
+
+.admonition--tip {
+  border-color: #34a853;
+}
+
+.admonition--caution {
+  border-color: #fbbc04;
+}
+
+.admonition--danger {
+  border-color: #ea4335;
+}
+
+/* Responsive improvements */
+@media (max-width: 996px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Custom styling for educational content */
+.lesson-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lesson-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+.lesson-exercise {
+  background-color: var(--ifm-color-secondary);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}
+
+.lesson-exercise h4 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
+
+.lesson-reference {
+  background-color: var(--ifm-color-secondary);
+  padding: 1rem;
+  border-radius: var(--ifm-global-radius);
+  margin: 1rem 0;
+}
+
+/* Improved sidebar styling */
+.menu {
+  font-size: 0.9rem;
+}
+
+.menu__list-item {
+  margin-bottom: 0.25rem;
+}
+
+.menu__link--active {
+  border-right: 3px solid var(--ifm-color-primary);
+}
+
+/* Better link styling */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Custom button styling */
+.button {
+  border-radius: var(--ifm-global-radius);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Improved footer links */
+.footer__links {
+  margin-bottom: 1rem;
+}
+
+.footer__item {
+  margin-bottom: 0.5rem;
+}
+
+/* Custom styling for navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar__brand {
+  font-weight: 600;
+}
+
+.navbar__link {
+  font-weight: 500;
+}
+
+/* Search bar improvements */
+.navbar__search {
+  padding-left: 1rem;
+}

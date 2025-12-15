@@ -1,0 +1,113 @@
+.exerciseBox {
+  background-color: var(--ifm-color-secondary);
+  border: 1px solid var(--ifm-color-primary-lightest);
+  border-radius: var(--ifm-global-radius);
+  margin: 1.5rem 0;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.exerciseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background-color: var(--ifm-color-primary-lightest);
+  border-bottom: 1px solid var(--ifm-color-primary-lightest);
+}
+
+.exerciseTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary-darker);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exerciseIcon {
+  font-size: 1.2rem;
+}
+
+.difficulty {
+  padding: 0.25rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.difficulty.beginner {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.difficulty.intermediate {
+  background-color: #fff8e1;
+  color: #f57f17;
+}
+
+.difficulty.advanced {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+html[data-theme='dark'] .difficulty.beginner {
+  background-color: #1b5e20;
+  color: #a5d6a7;
+}
+
+html[data-theme='dark'] .difficulty.intermediate {
+  background-color: #ff8f00;
+  color: #fff8e1;
+}
+
+html[data-theme='dark'] .difficulty.advanced {
+  background-color: #b71c1c;
+  color: #ffcdd2;
+}
+
+.exerciseContent {
+  padding: 1.2rem;
+}
+
+.exerciseFooter {
+  padding: 0 1.2rem 1.2rem;
+  border-top: 1px solid var(--ifm-color-primary-lightest);
+}
+
+.solutionButton {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--ifm-global-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.solutionButton:hover {
+  background-color: var(--ifm-color-primary-darker);
+}
+
+.solutionContent {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-primary-lightest);
+  border-radius: var(--ifm-global-radius);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .exerciseHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .exerciseTitle {
+    align-self: flex-start;
+  }
+}
