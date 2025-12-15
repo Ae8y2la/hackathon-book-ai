@@ -67,10 +67,42 @@ npm run build
 
 The output will be in the `build/` directory and can be deployed to any static hosting service.
 
-## Contributing
+---
 
-This project follows the specifications and plans defined in the `specs/` directory. All content is structured according to the established architecture and follows the quality standards defined in the project constitution.
+## 💻 Tech Stack
 
-## License
+**📚 Docusaurus** – React-based framework for building interactive documentation and educational books.  
 
-This educational material is provided under the terms defined in the project documentation.
+**🛠️ Spec-Kit Plus (SpecKit)** – Framework for structuring educational content and managing specifications.  
+
+**🤖 Claude CLI** – AI-assisted development and content generation tool for your book.  
+
+**🌐 GitHub Pages** – Hosting your static site online for free.
+
+---
+
+## 🙌 Contributing
+
+I welcome contributions to make this educational book even better!  
+
+**📌 Guidelines:**  
+- Follow the specifications in the `specs/` directory.  
+- Ensure all new content follows the structure defined by **Spec-Kit Plus**.  
+- Keep coding and documentation clean, modular, and well-commented.  
+
+**🐞 Reporting Issues:**  
+- Found a bug or broken link? Open an issue on GitHub.  
+
+**✨ Pull Requests:**  
+- Fork the repository, make your changes, and submit a pull request.  
+- Include a clear description of what you added or fixed.  
+
+⭐ If you find this project useful, give it a star on GitHub to show your support!
+
+---
+
+## 📜 License
+
+This educational material is provided under the terms defined in the project documentation.  
+You are free to use it for personal learning and educational purposes.  
+For redistribution or commercial use, please contact me for permission.
