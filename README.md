@@ -1,18 +1,36 @@
-# Physical AI & Humanoid Robotics Educational Book
+## 🤖 Physical AI & Humanoid Robotics Educational Book
+*An AI-native educational book on Physical AI & Humanoid Robotics, designed to teach how to connect AI agents to humanoid robots using ROS 2. Built with Docusaurus for an interactive learning experience.*
 
-This repository contains an educational book on Physical AI & Humanoid Robotics, built with Docusaurus. The book provides comprehensive learning materials for connecting AI agents to humanoid robots using ROS 2.
+---
 
-## Modules
+## ✨ Features
 
-### Module 1: The Robotic Nervous System (ROS 2)
+**🧠 Robotic Nervous System (ROS 2):**  
+*Learn the fundamentals of ROS 2, including nodes, topics, services, and actions, and understand how ROS 2 powers physical AI systems.*
 
-This module covers the fundamentals of ROS 2 for connecting AI agents to humanoid robots:
+**🐍 Python Agents with ROS 2:**  
+*Create Python agents that interface with ROS 2 using rclpy, implement topic-based robot control, and integrate AI logic with humanoid controllers.*
 
-1. **ROS 2 Fundamentals**: Understanding the purpose of ROS 2 in physical AI, including concepts of nodes, topics, services, and actions, and how ROS 2 differs from ROS 1.
+**🦾 Humanoid Modeling with URDF:**  
+*Understand URDF structure, create links and joints, incorporate sensors, and apply best practices for humanoid robot modeling.*
 
-2. **Python Agents with ROS 2**: Learning how to create Python agents that connect to ROS 2 using rclpy, write ROS 2 Python nodes, implement topic-based robot control, and link AI logic to controllers.
+**⚡ Interactive Learning with Docusaurus:**  
+*Explore concepts through a structured, web-based educational book, with modular content and navigation.*
 
-3. **Humanoid Modeling with URDF**: Understanding URDF structure, creating links and joints, incorporating sensors, and applying humanoid modeling best practices.
+---
+
+## 🎥 Live Demo  
+[![DEMO VIDEO](https://img.shields.io/badge/%F0%9F%8E%A5_Watch_Now-9146FF?style=for-the-badge&logo=https://drive.google.com/file/d/1lr3Yak2N6GgJvlq_9GJJTkRGpao_v-_C/view?usp=sharing)](https://Ae8y2la.github.io/hackathon-book-ai)
+
+---
+
+## 🏃 How to Run
+
+**1. Clone the Repository**  
+```bash
+git clone https://github.com/Ae8y2la/hackathon-book-ai.git
+cd hackathon-book-ai
+
 
 ## Setup
 
