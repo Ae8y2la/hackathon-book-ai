@@ -1,0 +1,157 @@
+.learningModuleContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  background-color: var(--ifm-color-secondary);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.learningModuleHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-primary-lightest);
+}
+
+.learningModuleTitle {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: var(--ifm-color-content);
+}
+
+.learningModuleMetadata {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.learningModuleTime,
+.learningModuleDifficulty {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.learningModuleContent {
+  margin-bottom: 2.5rem;
+}
+
+.learningModuleFooter {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ifm-color-primary-lightest);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.learningModuleActions {
+  display: flex;
+  gap: 1rem;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--ifm-global-radius);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: var(--ifm-color-primary-darker);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actionIcon {
+  font-size: 1.1rem;
+}
+
+.learningModuleProgress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progressBar {
+  width: 200px;
+  height: 8px;
+  background-color: var(--ifm-color-content-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--ifm-color-primary);
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  font-weight: 500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .learningModuleContainer {
+    padding: 1rem;
+  }
+
+  .learningModuleTitle {
+    font-size: 1.8rem;
+  }
+
+  .learningModuleHeader {
+    margin-bottom: 1.5rem;
+  }
+
+  .learningModuleMetadata {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .learningModuleFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .learningModuleActions {
+    justify-content: center;
+  }
+
+  .learningModuleProgress {
+    justify-content: center;
+  }
+
+  .progressBar {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .learningModuleContainer {
+  background-color: var(--ifm-color-secondary);
+}
+
+html[data-theme='dark'] .learningModuleTitle {
+  color: var(--ifm-color-content);
+}
