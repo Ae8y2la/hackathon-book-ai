@@ -1,56 +1,53 @@
 <!--
 Sync Impact Report:
-- Version change: 1.0.0 → 1.0.0 (initial constitution creation)
-- Modified principles: All principles added (none existed before)
-- Added sections: All sections added as initial content
-- Removed sections: None
+- Version change: 1.0.0 → 1.1.0 (project-specific constitution update)
+- Modified principles: All principles revised to match RAG Chatbot for Docusaurus Book requirements
+- Added sections: None
+- Removed sections: Original Physical AI & Humanoid Robotics specific content
 - Templates requiring updates: ✅ updated / ⚠ pending
 - Follow-up TODOs: None
 -->
-# AI/Spec-Driven Book on Physical AI & Humanoid Robotics Constitution
+# RAG Chatbot for Existing Docusaurus Book Constitution
 
 ## Core Principles
 
-### Accuracy
-Content must reflect verified sources. All factual claims must be supported by peer-reviewed literature, authoritative references, or verified data. Zero tolerance for plagiarism.
+### Grounded Answers
+All chatbot responses must be strictly grounded in book content retrieved from the indexed documentation. The system must never generate answers based on external knowledge or hallucinate information beyond the provided /docs content.
 
-### Clarity
-Content must be accessible to technical readers with a target Flesch-Kincaid grade level of 10-12. Complex concepts must be explained with clear examples and visual aids where appropriate.
+### Retrieval Accuracy
+The RAG system must prioritize source-based retrieval with verifiable citations. All responses must clearly indicate which document sections or pages were used as source material for the generated answer.
 
-### Reproducibility
-All specifications and code examples must be traceable and reproducible. Every experiment, simulation, or implementation must include sufficient detail for independent verification and replication.
+### Student Clarity
+All chatbot interactions must be optimized for technical students' comprehension. Responses should be clear, well-structured, and avoid unnecessary jargon while maintaining technical precision and accuracy.
 
-### Rigor
-Content must prefer peer-reviewed or authoritative references. At least 50% of all sources must be peer-reviewed publications or recognized authoritative texts in the field.
+### Reproducible Ingestion
+The document ingestion pipeline must be deterministic and reproducible. Indexing processes must be version-controlled and repeatable to ensure consistent retrieval quality and debugging capability.
 
-### Source Attribution
-All sources must follow APA citation format. Proper attribution must be maintained for all borrowed content, concepts, and data to ensure zero plagiarism.
-
-### Technical Integration
-The Docusaurus book and embedded RAG chatbot must be fully functional and deployed to GitHub Pages. The chatbot must effectively answer queries based on full text or user-selected passages using OpenAI Agents/ChatKit, FastAPI, Neon Postgres, and Qdrant.
+### Backend Engineering Rigor
+All backend components must follow production-ready engineering practices. This includes proper error handling, logging, monitoring, asynchronous processing, and clean integration with the existing Docusaurus architecture.
 
 ## Quality Standards
 
-- **Factual Verification**: All claims must be sourced from reputable, peer-reviewed materials
-- **Citation Format**: Strict adherence to APA style guidelines
-- **Source Quality**: Minimum 50% of sources must be peer-reviewed or authoritative
-- **Plagiarism Policy**: Absolute zero tolerance for uncredited content
-- **Writing Clarity**: Maintain Flesch-Kincaid grade level between 10-12 for accessibility
-- **Technical Accuracy**: All code examples and specifications must be tested and validated
+- **Zero Hallucination Tolerance**: Chatbot must never fabricate information or respond with content not present in indexed documentation
+- **Citation Requirement**: Every response must include proper source citations indicating the specific documents/passages used
+- **Selected-Text Mode**: When users provide text selections, responses must be based ONLY on the provided text, not broader document context
+- **Backend Reliability**: All API endpoints must be asynchronous, properly error-handled, and meet production service level objectives
+- **Performance Standards**: Query responses must meet acceptable latency targets for interactive chat experience
+- **Integration Cleanliness**: Backend must integrate seamlessly with existing Docusaurus site without disrupting current functionality
 
 ## Development Workflow
 
-- **Format Standard**: Content must be structured for Docusaurus book deployment to GitHub Pages
-- **Integration Requirements**: Chatbot must be seamlessly integrated with the book interface
-- **RAG Implementation**: Chatbot must utilize OpenAI Agents/ChatKit, FastAPI, Neon Postgres, and Qdrant
-- **Scope Boundaries**: Chatbot limited to answering queries based on book content and user-selected passages
-- **Quality Assurance**: All content must undergo verification before publication
-- **Testing Protocol**: Both book and chatbot functionality must be thoroughly tested before deployment
+- **Scope Boundary**: Chatbot operates exclusively on content from /docs directory, no external knowledge sources allowed
+- **RAG Implementation**: System must use appropriate vector storage and retrieval mechanisms for document search
+- **Query Modes**: Both full-document search and selected-text query modes must be properly implemented and enforced
+- **Quality Assurance**: All responses must be validated against source documents before release
+- **Testing Protocol**: Comprehensive testing of retrieval accuracy, citation correctness, and edge cases required
+- **Deployment Compatibility**: Solution must deploy cleanly alongside existing Docusaurus site infrastructure
 
 ## Governance
 
-This constitution establishes the foundational principles and standards for the development of the AI/Spec-Driven Book on Physical AI & Humanoid Robotics project. All contributors must adhere to these principles, and any deviations require formal amendment procedures. The constitution serves as the ultimate authority for project decisions, quality standards, and development practices.
+This constitution establishes the foundational principles and standards for the RAG Chatbot for Existing Docusaurus Book project. All contributors must adhere to these principles, and any deviations require formal amendment procedures. The constitution serves as the ultimate authority for project decisions, quality standards, and development practices.
 
-All code reviews, content reviews, and project decisions must verify compliance with these principles. Any complexity introduced must be justified by clear benefits to the project's core mission of delivering accurate, clear, and reproducible content on Physical AI & Humanoid Robotics.
+All code reviews, content reviews, and project decisions must verify compliance with these principles. Any complexity introduced must be justified by clear benefits to the project's core mission of delivering accurate, citation-backed responses from the existing book content.
 
-**Version**: 1.0.0 | **Ratified**: 2025-12-15 | **Last Amended**: 2025-12-15
+**Version**: 1.1.0 | **Ratified**: 2025-12-15 | **Last Amended**: 2025-12-16

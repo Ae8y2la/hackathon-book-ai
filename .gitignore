@@ -1,10 +1,40 @@
 # Dependencies
 node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
 
 # Production builds
 build/
 dist/
 .out/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+*.so
+.Python
+cache/
+.pytest_cache/
+.coverage
+.coverage.*
 
 # Logs
 *.log
@@ -40,3 +70,14 @@ coverage/
 .cache/
 .docusaurus/
 .temp/
+
+# Database
+*.db
+*.db-journal
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env
