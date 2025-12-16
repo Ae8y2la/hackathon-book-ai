@@ -71,13 +71,14 @@ The output will be in the `build/` directory and can be deployed to any static h
 
 ## 💻 Tech Stack
 
-**📚 Docusaurus** – React-based framework for building interactive documentation and educational books.  
-
-**🛠️ Spec-Kit Plus (SpecKit)** – Framework for structuring educational content and managing specifications.  
-
-**🤖 Claude CLI** – AI-assisted development and content generation tool for your book.  
-
-**🌐 GitHub Pages** – Hosting your static site online for free.
+- **📚 Docusaurus** – React-based framework for interactive documentation and educational books  
+- **🛠 Spec-Kit Plus** – Framework for structuring educational content and managing specifications  
+- **🤖 Claude CLI** – AI-assisted content generation and development tool  
+- **🌐 GitHub Pages** – Free hosting for static websites  
+- **⚡ FastAPI** – Backend framework for the RAG chatbot (Python 3.11+, async)  
+- **🧠 OpenAI Agents / ChatKit SDK** – Orchestrates LLM for retrieval-augmented answers  
+- **🗃 Qdrant Cloud** – Vector database storing embeddings of book content  
+- **🐘 Neon Serverless Postgres** – Stores metadata and ingestion state for the chatbot  
 
 ---
 
